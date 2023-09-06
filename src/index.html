@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--  Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>responsive || burger website</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="sticky">
+      <nav class="container py-3 flex justify-between items-center relative md:py-0">
+        <!-- logo -->
+        <div>
+          <a href="#">
+            <h1 class="uppercase font-bold">bur<span class="text-c-secondary">ger</span></h1>
+          </a>
+        </div>
+
+        <!-- menu links -->
+        <div class="hidden border-b py-6 w-[95vw] h-60 top-1 bg-c-primary absolute md:block md:border-none md:bg-none md:static md:w-auto md:h-auto md:border " id="menu_links_show">
+          <ul class="flex space-y-5 flex-col  justify-center items-center relative md:flex-row md:space-y-0 md:space-x-6 md:static ">
+            <li><a href="#" class="hover:text-c-secondary duration-150 ease-in" id="nav_link">Home</a></li>
+            <li><a href="#" class="hover:text-c-secondary duration-150 ease-in" id="nav_link">About Us</a></li>
+            <li><a href="#" class="hover:text-c-secondary duration-150 ease-in" id="nav_link">Menu</a></li>
+            <li><a href="#" class="hover:text-c-secondary duration-150 ease-in" id="nav_link">Review</a></li>
+            <li><a href="#" class="hover:text-c-secondary duration-150 ease-in" id="nav_link">Contact Us</a></li>
+
+            <li class="absolute -top-11 right-3 md:hidden" id="cros_icon"><i class="ri-close-line cursor-pointer text-xl " ></i></li>
+          </ul>
+
+        </div>
+
+        <div class="flex items-center justify-center space-x-4">
+          <i class="ri-moon-line cursor-pointer"></i>
+
+          <div id="menu_bar_icon">
+        <i class="ri-menu-2-line md:hidden" ></i>
+
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+    <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+      <section id="home">
+        <div class="container flex flex-col justify-center items-center md:flex-row">
+          <!-- home image side -->
+          <div class="right flex-1 md:flex-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+            <img src="img/home-image.png" alt="home image burger" class="w-60 md:w-72">
+          </div>
+
+          <!-- home text side -->
+          <div class="left flex-1 text-center md:basis-1/2 lg:basis-3/5 md:text-start">
+            <h1 class="title">happy tummy with testy burgers.</h1>
+            <div class="separator mx-auto my-4 md:mx-0"></div>
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ab dolorum, tempore unde eligendi hic ut animi dolorem, dignissimos aut itaque facilis doloribus nobis mollitia ratione illum modi distinctio.
+            </p>
+
+              <div class="home_icons mt-3 flex  items-center justify-center gap-6 md:gap-11 md:my-6 md:items-start md:justify-start">
+                <div>
+                  <i class="fa-solid fa-utensils icon"></i>
+                  <p>Delicious</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-droplet icon"></i>
+                  <p>Fresh</p>
+                </div>
+                <div>
+                  <i class="fa-brands fa-envira icon"></i>
+                  <p>Organic</p>
+                </div>
+
+              </div>
+
+              <div>
+                <button class="btn mt-3">Learn More</button>
+              </div>
+          </div >
+
+        </div>
+      </section>
+    <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
+      <section id="category" class="py-12 bg-c-primary-light">
+          <div class="container grid grid-cols-1 space-y-4 md:grid-cols-2 md:space-y-0 md:gap-4 lg:grid-cols-3">
+          <!-- card one -->
+        <div class="card1 flex gap-2 bg-c-secondary rounded p-2">
+          <img src="img/burger-1.png" alt="burger category img" class="w-16 h-16">
+
+          <div>
+            <h2 class="text-c-white font-bold">FOOD</h2>
+            <p class="text-c-white">Lorem ipsum dolor sit amet .</p>
+            <a href="#" class="text-c-back hover:text-white duration-150">Buy Online</a>
+          </div>
+        </div>
+        
+        <!-- card two -->
+        <div class="card2 flex gap-2 bg-c-green rounded p-2">
+          <img src="img/burger-2.png" alt="burger category img" class="w-16">
+
+          <div>
+            <h2 class="text-c-white font-bold">SNACK</h2>
+            <p class="text-c-white">Lorem ipsum dolor sit amet .</p>
+            <a href="#" class="text-c-back hover:text-white duration-150">Buy Online</a>
+          </div>
+        </div>
+        
+
+        <!-- card three -->
+        <div class="card3 flex gap-2 bg-c-red rounded p-2">
+          <img src="img/beverage-1.png" alt="burger category img" class="w-16">
+
+          <div>
+            <h2 class="text-c-white font-bold">BEVERAGE</h2>
+            <p class="text-c-white">Lorem ipsum dolor sit amet .</p>
+            <a href="#" class="text-c-back hover:text-white duration-150">Buy Online</a>
+          </div>
+        </div>
+        
+          </div>
+      </section>
+    <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+      <section id="promo">
+        <div class="container py-12 grid grid-cols-1 space-y-4 md:grid-cols-2 md:gap-4 md:space-y-0 ">
+          <!-- card one -->
+          <div class="card1 border border-gray-700  p-2 flex flex-col justify-center items-center">
+            <div class="img">
+              <img src="img/promo-1.png" alt="promo burger" class="w-36 h-36">
+            </div>
+
+            <div class="promo_text">
+              <p class="capitalize text-c-secondary">payday promo</p>
+              <h2 class="promo_title">get 10% discount on payday week.</h2>
+              <p class="promo_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consectetur!</p>
+              <a href="#" class="promo_link">Buy Online</a>
+            </div>
+
+          </div>
+
+          <!-- card two -->
+          <div class="card2 border border-gray-700  p-2  flex flex-col justify-center items-center">
+            <div class="img">
+              <img src="img/promo-2.png" alt="promo burger" class="w-36 h-36">
+            </div>
+
+            <div class="promo_text">
+              <p class="capitalize text-c-secondary">payday promo</p>
+              <h2 class="promo_title">get 10% discount on payday week.</h2>
+              <p class="promo_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consectetur!</p>
+              <a href="#" class="promo_link">Buy Online</a>
+            </div>
+
+          </div>        
+
+        </div>
+      </section>
+    <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+      <section id="about" class="bg-c-primary-light py-12">
+        <div class="container  md:grid md:grid-cols-2 md:gap-3">
+          <!-- about img -->
+
+          <div class="img ">
+            <img src="img/about.jpg" alt="about burger image" class="rounded md:w-96 h-full">
+          </div>
+
+          <div class="about_text ">
+            <h2 class="promo_title md:mt-0">find food and drinks, all-in-one placae for your best taste.</h2>
+            <div class="separator my-4"></div>
+            <p class="promo_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium, at velit corrupti numquam facilis.</p>
+            
+            <div class="bg-c-primary p-4 flex justify-between items-center rounded">
+
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-check text-c-secondary"></i> <span class="text-c-paragraph">Best Price</span></li>
+  
+                  <li><i class="fa-solid fa-check text-c-secondary"></i> <span class="text-c-paragraph">Best Service</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-check text-c-secondary"></i> <span class="text-c-paragraph">Best Price</span></li>
+  
+                  <li><i class="fa-solid fa-check text-c-secondary"></i> <span class="text-c-paragraph">Health protocol</span></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="mt-7">
+              <a href="#" class="btn">About Us</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+      <section id="menu">
+        <div class="container py-12">
+          <!-- menu text -->
+          <div class="text-center">
+            <h2 class="promo_title">Our Best Menu</h2>
+            <div class="separator mx-auto my-4"></div>
+            <p class="promo_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque nam veniam nisi eos quos!</p>
+          </div>
+
+          <!-- menu showcase -->
+          <div>
+            <ul class="flex gap-3 items-center justify-between md:justify-center">
+              <li id="menu_active_btn" data-tabs="all" class="btn cursor-pointer menu_active">All</li>
+              <li id="menu_active_btn" data-tabs="food" class="btn cursor-pointer">Food</li>
+              <li id="menu_active_btn" data-tabs="snack" class="btn cursor-pointer ">Snack</li>
+              <li id="menu_active_btn" data-tabs="beverage" class="btn cursor-pointer ">Beverage</li>
+            </ul>
+          </div>
+
+          <!-- all -->
+          <div class="menu_showcase_item all">
+            <div class="grid grid-cols-1 space-y-3  mt-4 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 ">
+
+              <!-- card one -->
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md ">
+                  <img src="img/burger-4.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">french fries</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+              <!-- card two -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/burger-3.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tasty Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$4.2</p>
+                </div>
+              </div>
+              <!-- card three -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/burger-6.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tummy Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$2.2</p>
+                </div>
+              </div>
+              <!-- card four -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/beverage-4.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Beverage</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- food -->
+          <div class="menu_showcase_item food ">
+            <div class="grid grid-cols-1 space-y-3  mt-4 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 ">
+
+              <!-- card one -->
+              <div class=" menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md ">
+                  <img src="img/burger-4.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">french fries</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+              <!-- card two -->
+  
+              <div class=" menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/burger-3.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tasty Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$4.2</p>
+                </div>
+              </div>
+              <!-- card three -->
+  
+              <div class=" menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/burger-6.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tummy Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$2.2</p>
+                </div>
+              </div>
+              <!-- card four -->
+  
+              <div class=" menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/beverage-4.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Beverage</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- snack -->
+          <div class="menu_showcase_item snack">
+            <div class=" grid grid-cols-1 space-y-3  mt-4 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 ">
+
+              <!-- card one -->
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md ">
+                  <img src="img/snack-4.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">french fries</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+              <!-- card two -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/snack-1.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tasty Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$4.2</p>
+                </div>
+              </div>
+              <!-- card three -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/snack-2.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tummy Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$2.2</p>
+                </div>
+              </div>
+              <!-- card four -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/snack-3.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Beverage</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- beverage -->
+          <div class="menu_showcase_item  beverage">
+            <div class=" grid grid-cols-1 space-y-3  mt-4 md:grid-cols-2 lg:grid-cols-3 md:space-y-0 ">
+
+              <!-- card one -->
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md ">
+                  <img src="img/beverage-1.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">french fries</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+              <!-- card two -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/beverage-2.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tasty Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$4.2</p>
+                </div>
+              </div>
+              <!-- card three -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/beverage-3.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Tummy Burger</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$2.2</p>
+                </div>
+              </div>
+              <!-- card four -->
+  
+              <div class="menu_inner_wrapper flex flex-col justify-center items-center">
+                <div class="img p-3 bg-c-primary-light rounded-md">
+                  <img src="img/beverage-4.png" alt="burger image menu-shwocase" class="w-60 h-56">
+                </div>
+  
+                <div class="menu_inner_text px-10">
+                  <h1 class="uppercase font-bold text-2xl mt-4">Beverage</h1>
+                  <p class="promo_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-c-secondary">$42.2</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+        </div>
+      </section>
+    <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+      <section id="review" class="bg-c-primary-light py-12">
+        <div class="container">
+          <!-- review text -->
+          <!-- menu text -->
+          <div class="text-center">
+            <h2 class="promo_title">Review</h2>
+            <div class="separator mx-auto my-4"></div>
+            <p class="promo_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque nam veniam nisi eos quos!</p>
+          </div>
+          
+          <div class="swiper py-6 ">
+            <ul class="swiper_wrapper grid md:grid-cols-2 lg:grid-cols-3 ">
+
+              <li class="swiper-slide">
+                <div class="flex flex-col border border-gray-700 rounded bg-c-primary p-4">
+                  <p class="promo_para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet officia consectetur possimus, quo autem voluptate quasi.</p>
+
+                  <div class="swiper_inner flex justify-between  ">
+                      <div class="flex  w-1/2 justify-start gap-3 items-center">
+                        <img src="img/review-4.jpg" alt="image review" class="w-12 h-12 rounded-xl">
+                        <div>
+                          <p class="text-xs ">John Doe</p>
+                          <p class="text-xs text-c-secondary ">Designer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-quote-right text-c-secondary text-2xl"></i>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col border border-gray-700 rounded bg-c-primary p-4">
+                  <p class="promo_para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet officia consectetur possimus, quo autem voluptate quasi.</p>
+
+                  <div class="swiper_inner flex justify-between  ">
+                      <div class="flex  w-1/2 justify-start gap-3 items-center">
+                        <img src="img/review-1.jpg" alt="image review" class="w-12 h-12 rounded-xl">
+                        <div>
+                          <p class="text-xs ">John Doe</p>
+                          <p class="text-xs text-c-secondary ">Designer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-quote-right text-c-secondary text-2xl"></i>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col border border-gray-700 rounded bg-c-primary p-4">
+                  <p class="promo_para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet officia consectetur possimus, quo autem voluptate quasi.</p>
+
+                  <div class="swiper_inner flex justify-between  ">
+                      <div class="flex  w-1/2 justify-start gap-3 items-center">
+                        <img src="img/review-3.jpg" alt="image review" class="w-12 h-12 rounded-xl">
+                        <div>
+                          <p class="text-xs ">John Doe</p>
+                          <p class="text-xs text-c-secondary ">Designer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-quote-right text-c-secondary text-2xl"></i>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col border border-gray-700 rounded bg-c-primary p-4">
+                  <p class="promo_para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet officia consectetur possimus, quo autem voluptate quasi.</p>
+
+                  <div class="swiper_inner flex justify-between  ">
+                      <div class="flex  w-1/2 justify-start gap-3 items-center">
+                        <img src="img/review-4.jpg" alt="image review" class="w-12 h-12 rounded-xl">
+                        <div>
+                          <p class="text-xs ">John Doe</p>
+                          <p class="text-xs text-c-secondary ">Designer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-quote-right text-c-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col border border-gray-700 rounded bg-c-primary p-4">
+                  <p class="promo_para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet officia consectetur possimus, quo autem voluptate quasi.</p>
+
+                  <div class="swiper_inner flex justify-between  ">
+                      <div class="flex  w-1/2 justify-start gap-3 items-center">
+                        <img src="img/review-4.jpg" alt="image review" class="w-12 h-12 rounded-xl">
+                        <div>
+                          <p class="text-xs ">John Doe</p>
+                          <p class="text-xs text-c-secondary ">Designer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-quote-right text-c-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+      <section id="contact" class="py-12">
+        <div class="container flex flex-col py-12 bg-c-secondary justify-center items-center md:flex-row gap-4">
+          <div class="contact-left">
+            <h1 class="promo_title text-c-back">get exclusive news!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quis?</p>
+          </div>
+
+            <div class="contact_right flex-1">
+              <form action="#" class="flex flex-col mt-4 md:flex-row">
+                <input type="email" placeholder="Email Address" id="email" class="py-1 px-3 rounded text-c-back focus:outline-none">
+                <button class="bg-c-back rounded mt-3 py-1 px-3 md:mt-0"><i class="fa-solid fa-paper-plane"></i> send</button>
+              </form>
+            </div>
+        </div>
+      </section>
+    </main>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer>
+    <section id="footer" class="py-12">
+      <div class="container">
+        <ul class="grid grid-cols-1 space-x-4 md:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <div>
+              <h1 class="text-white uppercase font-bold text-3xl">bur<span class="text-c-secondary">ger</span></h1>
+              <p class="text-c-paragraph ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ullam accusantium qui recusandae voluptatum quasi.</p>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <h1 class="text-c-white uppercase">support</h1>
+              <ul>
+                <li><a href="" class="text-c-paragraph text-xs">FAQ</a></li>
+                <li><a href="" class="text-c-paragraph text-xs">help</a></li>
+                <li><a href="" class="text-c-paragraph text-xs">privacy</a></li>
+                <li><a href="" class="text-c-paragraph text-xs">Terms & Condition</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div >
+              <h1 class="uppercase text-c-white">Phone</h1>
+              <p><i class="fa-solid fa-phone text-c-secondary"></i> <span>01219391293</span></p>
+            </div>
+            <div class="mt-4">
+              <h1 class="uppercase text-c-white">Email</h1>
+              <p><i class="fa-solid fa-envelope text-c-secondary"></i> <span>email@gmail.com</span></p>
+            </div>
+          </li>
+
+          
+          <li>
+            <div >
+              <h1 class="uppercase text-c-white">Location</h1>
+              <p><i class="fa-solid fa-location-dot text-c-secondary"></i> <span>address</span></p>
+            </div>
+            <div class="mt-4">
+              <h1 class="uppercase text-c-white">Follow Us</h1>
+              <p class="space-x-4">
+                <i class="fa-brands fa-facebook-f text-c-secondary"></i> 
+              <i class="fa-brands fa-twitter text-c-secondary"></i>
+              <i class="fa-brands fa-square-instagram text-c-secondary"></i>
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      
+// swiper js
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+    speed: 400,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction : false
+  },
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 786px
+        786: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+        }
+      },
+    // If we need pagination
+    gapCursor : true, 
+    pagination: {
+      el: '.swiper-pagination',
+      clickable : true,
+    },
+
+  });
+    </script>
+  <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="script.js"></script>
+  </body>
+</html>
